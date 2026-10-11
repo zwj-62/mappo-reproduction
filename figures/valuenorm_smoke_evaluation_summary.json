@@ -1,0 +1,53 @@
+{
+  "phase": "smoke",
+  "training_budget_per_model": 10000,
+  "episodes_per_model": 3,
+  "evaluation_environment_seeds": [
+    100000,
+    100002
+  ],
+  "deterministic_actions": true,
+  "actor_only": true,
+  "device": "cpu",
+  "source_sha256": "76617041a985bc386004370a4fda405d4035b0cce3ab8aee0f120ca6a75bb7bd",
+  "identical_initial_states_verified": true,
+  "initial_state_sha256": [
+    "a006e603a90daef30f0c562288bda774d4b4e512caed3d5b930e81ebe5532e3a",
+    "652eac606771a6559691fb444f1457a444cd16ee3417992a10ad075016c3136d",
+    "81caff24bad86f3c271e841f12d626673038123512896dddb3409b9a299e7ad7"
+  ],
+  "repeated_first_3_max_abs_difference": 0.0,
+  "metric": "Independent held-out episode return, summed over 25 steps and averaged over agents",
+  "std_definition": "ddof=0 across the trained-seed episode means; not confidence intervals",
+  "per_model": [
+    {
+      "group": "on",
+      "training_seed": 1,
+      "episode_mean": -204.64782150248712,
+      "episode_std_ddof0": 32.0213282589935
+    },
+    {
+      "group": "off",
+      "training_seed": 1,
+      "episode_mean": -238.936466958721,
+      "episode_std_ddof0": 56.64200016937725
+    }
+  ],
+  "groups": {
+    "on": {
+      "mean": -204.64782150248712,
+      "std_across_training_seeds": 0.0,
+      "per_seed_means": [
+        -204.64782150248712
+      ]
+    },
+    "off": {
+      "mean": -238.936466958721,
+      "std_across_training_seeds": 0.0,
+      "per_seed_means": [
+        -238.936466958721
+      ]
+    }
+  },
+  "on_minus_off_mean": 34.288645456233894
+}

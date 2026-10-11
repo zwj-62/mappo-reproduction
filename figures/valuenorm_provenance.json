@@ -1,0 +1,857 @@
+{
+  "organization": "Original mappo-reproduction layout; no training performed during relocation",
+  "source_manifest": {
+    "original_source": "official-source\\on-policy-main",
+    "snapshot": "experiments\\valuenorm-20261011\\source",
+    "sha256": "76617041a985bc386004370a4fda405d4035b0cce3ab8aee0f120ca6a75bb7bd",
+    "files": {
+      ".gitignore": "66906fac7908a2607457f102118bcd85541e8ecca8a59c000b541159b29f4678",
+      "environment.yaml": "5ac5976b3e6423c969193bc6044cbc500ef422f988f50e2b0fa33f337d7f1440",
+      "LICENSE": "0335be1babd64ea33302d4d365cdecc5985aaf5c4481236e0c5da07eb37a4580",
+      "onpolicy/__init__.py": "823c382eb6bd6d4cb6572c9293d28f93291fd948290aea25173b55c677420364",
+      "onpolicy/algorithms/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "onpolicy/algorithms/happo/happo_trainer.py": "f64dc4d60b0fd7b4720e8950481a0f3c78ff25ad69b95f44405b2fea28edeb4f",
+      "onpolicy/algorithms/happo/policy.py": "c44e67c6f6676a4795988c25aa167653912e21afa54a03de7638e6a1b24a3e96",
+      "onpolicy/algorithms/hatrpo/hatrpo_trainer.py": "343f1c9b90fbbb2db4ccef07367a3730ee37afc8170f2e0695528fc1fe30d45b",
+      "onpolicy/algorithms/hatrpo/policy.py": "6b709d839b1dfd71e2debe2866d2bc19e5cc999af8a7be8bf72ea7b0ddfcd17c",
+      "onpolicy/algorithms/mat/algorithm/ma_transformer.py": "8554840f11d534f7b02549f54b11b4e6c1bbf5efb19dbe83c5c0831eec1c009f",
+      "onpolicy/algorithms/mat/algorithm/transformer_policy.py": "b79229b477955dce884df03fd76b43a7eaf2ae0baf3a0d35e662ab640234a3ee",
+      "onpolicy/algorithms/mat/mat_trainer.py": "8ca849ef496338a35666e447f873472caf1d2bf8f328277af5ca46b23a7811bb",
+      "onpolicy/algorithms/r_mappo/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "onpolicy/algorithms/r_mappo/algorithm/r_actor_critic.py": "db6ff5de5b56e8a28a91181acf831bddd1c8b12d124a26025d9f63bcd3f98ee5",
+      "onpolicy/algorithms/r_mappo/algorithm/rMAPPOPolicy.py": "33bb77fea3034c9bc79af6add5a7a5989cbb65056332786756e6ac502aa9d5ca",
+      "onpolicy/algorithms/r_mappo/r_mappo.py": "8a889d010cb5e327eeffa9d8ab1d910cab384e295d0690dd05e268dc56e047be",
+      "onpolicy/algorithms/utils/act.py": "e1ca14c07401baa2f2342853c09dd9faf0ce89eac6facd02bbe078d2439b7f22",
+      "onpolicy/algorithms/utils/cnn.py": "410e28dc1977daefc9571207173f6b54caacefae2f9e9a59dc32a6bd7f213b36",
+      "onpolicy/algorithms/utils/distributions.py": "157092a52d685881c0c10d2e5487eaebb7a7d66b3d608a7e5f5ca6ea42b9af7a",
+      "onpolicy/algorithms/utils/mlp.py": "790c0c6ec9f38569919e7e5c065d765c2b808da962619beb85eb6f7ba3a30087",
+      "onpolicy/algorithms/utils/popart.py": "9205b0ce68ec6b9dc11673adfe788ba26e9f301f31c6a2f7f5d242e412d760fe",
+      "onpolicy/algorithms/utils/popart_hatrpo.py": "3dcfec2fd3c56d86d97c0e488bae8e431ce2553d842bf1f705a3b120ec4b132c",
+      "onpolicy/algorithms/utils/rnn.py": "8a5f7bc2a9263d4ebd3234e877ee305c5caae24987d39e1155fc3fe35e089eaf",
+      "onpolicy/algorithms/utils/transformer_act.py": "bc99b5f350751287cbc9932267674c37b8d5d6d358be0f1913d0be5b4aa3ee26",
+      "onpolicy/algorithms/utils/util.py": "390fc541abc72231b864e6017b2a8e75b58a1bc593e87fc3bc27b80b9effa2c6",
+      "onpolicy/config.py": "61261a04812fba57e81941ae14309100b8bf809dcfe4d038dd0a4a7ae5afaab4",
+      "onpolicy/envs/__init__.py": "15c2ffe5d6790738d28363cf7101f64d7b6370a182b805284fbbbd304e6b42a1",
+      "onpolicy/envs/env_wrappers.py": "b694b66724ee063163fa2009f3b230a3f01e1e6a2895b473f1b614962ef1855d",
+      "onpolicy/envs/football/.DS_Store": "f91814f4d6f4524d5c39aaf5c970d1ec26aa86861a7c92dcf2c25728add4a16f",
+      "onpolicy/envs/football/Football_Env.py": "3d1d3fd5e21eb2728e82123a4b641276efda9eda2b545399d281a3692aec9291",
+      "onpolicy/envs/hanabi/__init__.py": "bc48810cf2c9016a7d7019acd5ae2323b98747206170f198b6c699331a21e7f9",
+      "onpolicy/envs/hanabi/clean_all.sh": "7ce9f02c3b5ac0eae064a3b2224d23994d2a9786be8ee9e4ebafc564059dca7e",
+      "onpolicy/envs/hanabi/CMakeLists.txt": "1f87accbc5aac32a1f75fd33ce7aad9885cfafc38730eb054aff37d31f855650",
+      "onpolicy/envs/hanabi/Hanabi_Env.py": "34936f843b2b8e1942e550a8e506f5ef08de06dc81a74523137740ec026af91f",
+      "onpolicy/envs/hanabi/hanabi_lib/canonical_encoders.cc": "183bcf5ddc89d464d70c5e519abfa93058f094027c8a672bca7dc0c6804d43fd",
+      "onpolicy/envs/hanabi/hanabi_lib/canonical_encoders.h": "11982d4256c8e6a95d731bc1fb2b80b5cfea526c3927aaacc5e484167c548b39",
+      "onpolicy/envs/hanabi/hanabi_lib/CMakeLists.txt": "19f5bbccf32092ec915b0c8832b9fddacf792edc49114ee680bee3bae0e48cca",
+      "onpolicy/envs/hanabi/hanabi_lib/hanabi_card.cc": "bb79fec1bce34451b839bced0dce81f7f3be83f6c5777a7807955412efedad1f",
+      "onpolicy/envs/hanabi/hanabi_lib/hanabi_card.h": "a9183884930cd7c227c28b98a44b45ae60e782761f1b80a4dac03f6b0196a6f6",
+      "onpolicy/envs/hanabi/hanabi_lib/hanabi_game.cc": "93c46303ccf4aa090a43254777669c89877dfb2551544f9922ac0d2d5c0b8279",
+      "onpolicy/envs/hanabi/hanabi_lib/hanabi_game.h": "164e5eac046fcb8c50bea8e3637d126dd33ebd04eb3720c7573f10ad2771834e",
+      "onpolicy/envs/hanabi/hanabi_lib/hanabi_hand.cc": "1c6f57cc065f0dc59c4c9eeda1ab620a852e091fd21b76020e5211a4711d4366",
+      "onpolicy/envs/hanabi/hanabi_lib/hanabi_hand.h": "9f2b405102e28528922cb60c7c7ae404ae1811a3b6850853de01d9cc97d1a178",
+      "onpolicy/envs/hanabi/hanabi_lib/hanabi_history_item.cc": "990f73b4175ceeeac43122f94e11ec1a79125b0396c6bcf79a2a8b2f7ac68cb4",
+      "onpolicy/envs/hanabi/hanabi_lib/hanabi_history_item.h": "0f9c02c68fffcc3fe3f1452cd600f191c0f236ddadb17503e30e996e98832d3f",
+      "onpolicy/envs/hanabi/hanabi_lib/hanabi_move.cc": "f5ba0e918048bf2118cd95ee92baa5476b056c010a551de6148712358f6c2d9b",
+      "onpolicy/envs/hanabi/hanabi_lib/hanabi_move.h": "610fa50797014e393653b824aa47d5a786ab9f592d3395bcb9b83016623987a5",
+      "onpolicy/envs/hanabi/hanabi_lib/hanabi_observation.cc": "0e847480e8ae4017a026667c621683a5393946dd81e96521b5d350619c68b4ac",
+      "onpolicy/envs/hanabi/hanabi_lib/hanabi_observation.h": "3ac64d39e82b55ae4c4ede59b55f1961c163787790fd5484abb26f9f84a73883",
+      "onpolicy/envs/hanabi/hanabi_lib/hanabi_state.cc": "980a66398439d5c3985b0d7637e7bc45b63ee3cb2377f285f81a5ad6117b5b0a",
+      "onpolicy/envs/hanabi/hanabi_lib/hanabi_state.h": "57698e9fbc6ccf3dcfe6962b6601c8d1f5d1097a133bb4935f373c799e4d4081",
+      "onpolicy/envs/hanabi/hanabi_lib/observation_encoder.h": "e1beda9f2ee4f2da790bc2d7786b0fd592581a10c3c86724489ad32aa7f715c8",
+      "onpolicy/envs/hanabi/hanabi_lib/util.cc": "7d00c5b586178be339b11b80328a4a34efb47d54890d67145c9f8ca1013ac0c0",
+      "onpolicy/envs/hanabi/hanabi_lib/util.h": "4d05de3e5146fb721517e31c63be7aa2f960255e88a53564f31cc5258a0eac25",
+      "onpolicy/envs/hanabi/pyhanabi.cc": "d1507e4cd27360635f19601b542ed8f457c8d0ab3e726af4c5b95ed41246f0f1",
+      "onpolicy/envs/hanabi/pyhanabi.h": "794da7a0845c76f0e0a3279edba5c7a9fc87efc6ba9ef27711b76eda11da1e41",
+      "onpolicy/envs/hanabi/pyhanabi.py": "f96ffd8bf7aff2ecb5cbbe811d090bc0bd874bdc5728d3a0573f3a3d6d57fad1",
+      "onpolicy/envs/mpe/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "onpolicy/envs/mpe/core.py": "ace56e44c8eba71ca978e4e102a22e4301e49dcf7b652676bce91378f635675d",
+      "onpolicy/envs/mpe/environment.py": "c3362ebb7fc2d2d1ee0957dd892a27ef01e0d3559353c09936999018b98df1d0",
+      "onpolicy/envs/mpe/MPE_env.py": "4045ea2c92ce533d4eab8a45af611b5de4adb1dc3846afe0b30f73100ec6e60e",
+      "onpolicy/envs/mpe/multi_discrete.py": "8b602688b62238ba673d51caad4fc01fd1e084b0d12be76431f508cc7fe390a9",
+      "onpolicy/envs/mpe/rendering.py": "1f4617c995e5f6dcfe4c5a9adbc6b87935175b2500ed72dabea6ce68e1d448c5",
+      "onpolicy/envs/mpe/scenario.py": "1e5af9aaed42f7abcf50f8a3017788860fd0ff4564a9788adce243e8516ccd2f",
+      "onpolicy/envs/mpe/scenarios/__init__.py": "e5edef888d2609c3546df48287c3ddb344cc8f064c54ba63b08ae7aa50ab6a83",
+      "onpolicy/envs/mpe/scenarios/simple_adversary.py": "d4f4f6c4f0bd7e9b0a8412df03e49b3338b9a2b2d7f83047b06891b0af7b71ea",
+      "onpolicy/envs/mpe/scenarios/simple_attack.py": "fc3519264e4d0ac42b31b7ddda21ef0ce98e3077daa4375cbee310cb96ade44e",
+      "onpolicy/envs/mpe/scenarios/simple_crypto.py": "f7a6159aeb841dc20c7394782cb986f1975f40290db3747e269a73bdd83fa8db",
+      "onpolicy/envs/mpe/scenarios/simple_crypto_display.py": "8f2e5f2a844019b0b3ca247c08d11f89cc865e7494884c1495af112f07b910b6",
+      "onpolicy/envs/mpe/scenarios/simple_push.py": "8bc9cdd89e2389f5ed6086dbd9e535831d37decadfcebb7ce5c2ffc025463f5d",
+      "onpolicy/envs/mpe/scenarios/simple_reference.py": "9819a0cbc67a100cfa4016166e1ff5e38a52c2c22514432f7347450b141406cd",
+      "onpolicy/envs/mpe/scenarios/simple_speaker_listener.py": "5c81c9a0c17c55006b82e399e4c4c6f7b8170cc490633d53358d60533f0e30e5",
+      "onpolicy/envs/mpe/scenarios/simple_spread.py": "0bf09bdd0dec8788b632ea103ac2873c15948e6f1a9f7d95ff378025ae08e3b9",
+      "onpolicy/envs/mpe/scenarios/simple_tag.py": "53c59dab8fffdd217e1264c88e9606ad41042e1500bcfd6b2d0030cbc77b9f52",
+      "onpolicy/envs/mpe/scenarios/simple_world_comm.py": "23f19e7852825ec99920230f83b3bfe3e5bbdd62330fd584ec790a29f251b2f6",
+      "onpolicy/envs/starcraft2/multiagentenv.py": "d003e23f08ad44898e5e08d6760fec14b53d841f036dd8920e100a3e2e2756ba",
+      "onpolicy/envs/starcraft2/smac_maps.py": "c4c8d485d455dbbc08599b642cfc5cc4dcda373071a68d1bd94e5ff4bfb4f043",
+      "onpolicy/envs/starcraft2/SMACv2.py": "198d9d4289890a8c50fb971707459e67a36b3fe84a8718f850996c71d7105be8",
+      "onpolicy/envs/starcraft2/SMACv2_modified.py": "d9eb4526ce2d7d6ff577dcfa1f36cd3a1ccac50e3859fdd9df7918d969419a6e",
+      "onpolicy/envs/starcraft2/StarCraft2_Env.py": "65f65896988b45977d4a5b6d1b624cbe901fb245590bd3c0a0252ebd72c434e4",
+      "onpolicy/envs/starcraft2/StarCraft2v2/distributions.py": "a3ea4befa0867161590c4fc715b2af10af3180434605046530fa8ff4d57f36b2",
+      "onpolicy/envs/starcraft2/StarCraft2v2/starcraft2.py": "221b729815141052b1b14a90eac089bc897dd0f11a38414ab927a083d5a147c6",
+      "onpolicy/envs/starcraft2/StarCraft2v2/wrapper.py": "2fccc8d53ca346e21e204c43b652e451a93e73a9be432973b811e1592e379fd5",
+      "onpolicy/runner/separated/base_runner.py": "7b867652fe10630be907d12f980109a056ceb5be2a8364cb8b1beaf0144f01f7",
+      "onpolicy/runner/separated/mpe_runner.py": "87cc8b0dfa1dabaf353ba9ee5deafdf74e2d88520a54d9cacda7e4c1d49b8343",
+      "onpolicy/runner/separated/smac_runner.py": "6d33a2728b927ecd4758f309d669613732a8411a54597eee5fae70207df43945",
+      "onpolicy/runner/shared/base_runner.py": "8ff3b2f41d8825d477a1320cea5a1d7a2d2a2d2efbf85e386f64144e9af79af6",
+      "onpolicy/runner/shared/football_runner.py": "4f9bfce9482d3eea5f9d5248ed42b675f382205d18d9a2b1e3afe40031018e06",
+      "onpolicy/runner/shared/hanabi_runner_forward.py": "6af3662b7f9814b420a5b79245be0a56ba4aa99b8631c75e7410ca978b5781a6",
+      "onpolicy/runner/shared/mpe_runner.py": "2914514cac609b95bba75434ed7e17d4093684f577a26dc38624b1d2ab8e3229",
+      "onpolicy/runner/shared/smac_runner.py": "3f88e137515e40459ea002fc4f054af02c625f3356d7498b875a6d34ffb58b4a",
+      "onpolicy/scripts/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "onpolicy/scripts/eval/eval_hanabi.py": "5a3802ffffa9ebd3e26b183da37b364065314a51906f03175cc683a5290aae09",
+      "onpolicy/scripts/eval_hanabi_forward.sh": "a7ab426f4d198a53ca31773cdce370e1db4bd456656b563be7e0c090a6b968df",
+      "onpolicy/scripts/render/render_football.py": "69b8154af99a664800d0ef61f007a06ea7a7daf1fe57e5ed967e19b50351acca",
+      "onpolicy/scripts/render/render_mpe.py": "bea75032ce9d1483b19a757670228bd7357450450b7d1e68f0f73813f669a2a7",
+      "onpolicy/scripts/render_football.sh": "fb79647e8152a379b45cda56727d39fc66d88d88e5430527daaacf2cefe7c146",
+      "onpolicy/scripts/render_mpe.sh": "5c77ecf9428b86464b38dcd26762ddfa54b173768f36aeccb727d30b2146c6e1",
+      "onpolicy/scripts/train/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "onpolicy/scripts/train/train_football.py": "de22830a01234e84f0aa8a7622032aac342a6205a3bbdf4268485747e71436ce",
+      "onpolicy/scripts/train/train_hanabi_forward.py": "c2a7bbac5c2571372452af8c3dbfc6225b843d4870af9c864063899eec3162a7",
+      "onpolicy/scripts/train/train_mpe.py": "94f1ca6a763e43ef6ad4729e4b9a94297f0d6ab9168b13f7efd0e3e6843fb4a2",
+      "onpolicy/scripts/train/train_smac.py": "c33eeb297a8d1c4665d30c4205dbafc35ff5a51ea2c890191bd35ad955e2b6ad",
+      "onpolicy/scripts/train_football_scripts/train_football_3v1.sh": "bb2fb5c3ac336a8d02a18efa78fa11bf1144548a4ed0570e005eb3bf2b27cc83",
+      "onpolicy/scripts/train_football_scripts/train_football_ca_easy.sh": "6158a78713dbc9d0007370aec6ff74e724490b0f14d4beb803daa467c7d58d14",
+      "onpolicy/scripts/train_football_scripts/train_football_ca_hard.sh": "46cde2f9769641b6bb3cd70b69f18494dc82716ce8306ebaa43c1da40309735a",
+      "onpolicy/scripts/train_football_scripts/train_football_corner.sh": "b6a225cba10c0c012782c9a1c974ed9e76cbcde72e3b58bea508b459f020bae3",
+      "onpolicy/scripts/train_football_scripts/train_football_rp.sh": "3ed0a38be2dcba34a6bae8e8fd4bbe6f4a9c88a0a2ef92eae3498bcbff22ac1d",
+      "onpolicy/scripts/train_football_scripts/train_football_rps.sh": "673976fa85fc80d8b3bff84c4c68c50fe8bfdcf1445e5629bc5d7bef0b7879d8",
+      "onpolicy/scripts/train_hanabi_forward.sh": "f2c371c41b54e07b9018d41c4a870d85704ca7fc7f62dad053e461396e0244d9",
+      "onpolicy/scripts/train_mpe_scripts/train_mpe_comm.sh": "5d42b4b35761e1f0dfc60e92e1c3eeefdf27266ed42877747337617efc19463f",
+      "onpolicy/scripts/train_mpe_scripts/train_mpe_reference.sh": "96cf2998f41291b439f44df4ce6ecb9ddd99ea2a180faf117f9051ee40437c4a",
+      "onpolicy/scripts/train_mpe_scripts/train_mpe_spread.sh": "969666d51c741d5b84230ac37cefb9a4a73cb918b016ece619d5315f93b67552",
+      "onpolicy/scripts/train_other_algo/train_happo.sh": "cc93fbd10cae708c2f1038e7a800a9090a669c55957372655a745fe4912c017c",
+      "onpolicy/scripts/train_other_algo/train_hatrpo.sh": "6af5beef61ea9a90d6febde7a25b4901dd20418cfa2631975fed9b74cf17f4e2",
+      "onpolicy/scripts/train_other_algo/train_mat.sh": "e677958123513d20f2fcb046a12330e3efad68a7028b84e84f537e9bbba139fd",
+      "onpolicy/scripts/train_other_algo/train_mat_dec.sh": "e9e217fca2e74d468a7ffc429cfc0e8550951b3d9b1cb3fcfb6272fe08a2a98b",
+      "onpolicy/scripts/train_smac_scripts/train_smac_10m_vs_11m.sh": "812b5c8a5cd778c96bb1f5bd987766f293d628f4b7fcb887e8478d17e3fcf47c",
+      "onpolicy/scripts/train_smac_scripts/train_smac_1c3s5z.sh": "ee7bf05c49ab98ba09c1388507c6c6798ec5a07ab873193f4b0f044eaa1999da",
+      "onpolicy/scripts/train_smac_scripts/train_smac_25m.sh": "c5b2990b8d7bed80184275fa5d678244ef6778228c176a6174ef6419a2232c3f",
+      "onpolicy/scripts/train_smac_scripts/train_smac_27m_vs_30m.sh": "4e1131f684de5859d4f55235239c22bbfbf338b3ac384be9af662c81ae3d7b88",
+      "onpolicy/scripts/train_smac_scripts/train_smac_2c_vs_64zg.sh": "08f9b5f2928904908d3afed26a5ee74db9d6ac714b0f08cdaf99bf541abe0fcb",
+      "onpolicy/scripts/train_smac_scripts/train_smac_2m_vs_1z.sh": "418699cfe1b8bb9153673dcd4b1616aea735a0367a88c6df3879544b141e2621",
+      "onpolicy/scripts/train_smac_scripts/train_smac_2s_vs_1sc.sh": "c463c780f9a4c88b11c1b99c914cab447715a52b2537217c483f1cce52705256",
+      "onpolicy/scripts/train_smac_scripts/train_smac_3m.sh": "6b631f95c15d3c1142031f2f505c1bd5f90a1566287dbdc4818d17448842d266",
+      "onpolicy/scripts/train_smac_scripts/train_smac_3s5z.sh": "9aa1760f2904b99a3c80f362454488b079d9fd941b6d55716c32c58da86f7c27",
+      "onpolicy/scripts/train_smac_scripts/train_smac_3s5z_vs_3s6z.sh": "1e40e960b8967e33a8fbb02a3301367d9f918796d6888652c00f72cd2f4d8377",
+      "onpolicy/scripts/train_smac_scripts/train_smac_3s_vs_3z.sh": "65247e6a8233073e72dcbcc75eb43edc1306d6549d9babd9c3529e3ff062be17",
+      "onpolicy/scripts/train_smac_scripts/train_smac_3s_vs_4z.sh": "221c42e2ddbe12aaa78595b559474aceb8555abdc313c40f0341e4eae3314842",
+      "onpolicy/scripts/train_smac_scripts/train_smac_3s_vs_5z.sh": "bf705a2ebb0312d1122b2e7470083369a6e021543743f1549045dcaba49cd297",
+      "onpolicy/scripts/train_smac_scripts/train_smac_5m_vs_6m.sh": "bf6b6d9f53ec719c67b13b5e385c4ceefb1d95581f27d0ce61d66c8f5f32fbb8",
+      "onpolicy/scripts/train_smac_scripts/train_smac_6h_vs_8z.sh": "6c1bb7c04898c9145e07b18612a44e09aaa84cc649e0198bdfb36933dd08e244",
+      "onpolicy/scripts/train_smac_scripts/train_smac_8m.sh": "33a2d34fa781e5b85c529ecf35b3ec16b01eed025c76dfa95697c25be406e953",
+      "onpolicy/scripts/train_smac_scripts/train_smac_8m_vs_9m.sh": "5b6cad941b2e66def2cfca18205e5692826f004de6930e92c418fe5c9ce623fd",
+      "onpolicy/scripts/train_smac_scripts/train_smac_bane_vs_bane.sh": "fa5f6a92e197a5b52b572ec5ceff5b87450eb049c4fa100d0616febc6dd43d6c",
+      "onpolicy/scripts/train_smac_scripts/train_smac_baneling.sh": "69642a2c5b5a3e64591aec2b9f9fdec4b68f5123aa06863e351207d5babf3836",
+      "onpolicy/scripts/train_smac_scripts/train_smac_corridor.sh": "0b176afb48d6dbfd46b557a84b10befd46ad6c0412981b1937791df51b509aad",
+      "onpolicy/scripts/train_smac_scripts/train_smac_MMM.sh": "da1219bbea0dec80a00c463f149c2bed4c1afabf61116db7345cb29d8dbe0a99",
+      "onpolicy/scripts/train_smac_scripts/train_smac_MMM2.sh": "07fe5204e04c53dc7dc4b6f8128cc32da2a55aad0171e82c78b1348df3b07b1c",
+      "onpolicy/scripts/train_smacv2_scripts/train_protoss_10v10.sh": "1038015d21ae944dafd1ca6fc160760d9c6d84543e1740d2363ab516747cc3f3",
+      "onpolicy/scripts/train_smacv2_scripts/train_protoss_10v11.sh": "d237541fd951e7c07ddfd5a119490ea05cb95a184404c9c2435ed8430913dcbd",
+      "onpolicy/scripts/train_smacv2_scripts/train_protoss_20v20.sh": "9fcea52954cf83a105aafd8e2c74da89b6aee43b8fc99464bdf02e03e837c3cd",
+      "onpolicy/scripts/train_smacv2_scripts/train_protoss_20v23.sh": "5400f269de7f5785d70f1dce500e03277d61602a009eff1902e0eaa9d757502b",
+      "onpolicy/scripts/train_smacv2_scripts/train_protoss_5v5.sh": "1c6bb0ca31391662167970d5df40d9d3a1e7f09ad3a1cfd1dcf65c2f64711bf9",
+      "onpolicy/scripts/train_smacv2_scripts/train_terran_10v10.sh": "0549ba6e3824c8b49d34d83ad915763c44fa7fe873e9e98336ff9a2add0ca642",
+      "onpolicy/scripts/train_smacv2_scripts/train_terran_10v11.sh": "4906e768d668bf3553e8201c6f6b07f637a7cb688f1c4a3047d04804e2bbc38d",
+      "onpolicy/scripts/train_smacv2_scripts/train_terran_20v20.sh": "9578a8e7e28e6d4970ef6127b039ae396477a3f2f821d0b0fab45d72bc4337b4",
+      "onpolicy/scripts/train_smacv2_scripts/train_terran_20v23.sh": "fd5a9ac3c56a37c97b71b0ca15aa0ff0fb9e473aa00db83596c554c651e11f13",
+      "onpolicy/scripts/train_smacv2_scripts/train_terran_5v5.sh": "c0f9b621d7d102187bbdacf1c506b1b622459c188c3032574480d7f0fa86c5a9",
+      "onpolicy/scripts/train_smacv2_scripts/train_zerg_10v10.sh": "11c1bb0ed862467b324d643ab29342734d8b970b67d55ff0910dfb997cc3dbb0",
+      "onpolicy/scripts/train_smacv2_scripts/train_zerg_10v11.sh": "51e6038296f37eba101b2f4f9994ba330785c905813863fbf6f070f8f5302e9d",
+      "onpolicy/scripts/train_smacv2_scripts/train_zerg_20v20.sh": "cf2befc026373c9a5fa390444e3ea581c01198795c738d4bbfb1e469bebf488d",
+      "onpolicy/scripts/train_smacv2_scripts/train_zerg_20v23.sh": "881db270d1e3e2cef267515e23b4c7569778513b303749b99378337495a7a5cf",
+      "onpolicy/scripts/train_smacv2_scripts/train_zerg_5v5.sh": "d78ebbad07da853c9f1c61122c03d92b58df02004528d73c9e62df839baf36c3",
+      "onpolicy/utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "onpolicy/utils/multi_discrete.py": "e2c8b8cf149cfd84f77149a7806a1de82e976fb55cf37884d90433a50df5a91b",
+      "onpolicy/utils/separated_buffer.py": "ae1898d01d7162c387a86bd8f09085d9c2469954d6f4424aaf07aceff0e8124b",
+      "onpolicy/utils/shared_buffer.py": "78a19d8a0e7a49cde1f3efde45cac193c04d9c3e861bc979e57824ec9e000d0e",
+      "onpolicy/utils/util.py": "397ec9d68851663ad012bafa60a65b6510405b64f476913b0700bb6fcca22e0c",
+      "onpolicy/utils/valuenorm.py": "df19f747f5845c337d1933ee1a092fa3c758f9ada38bfa3e32aa7d277ac845a2",
+      "onpolicy.egg-info/dependency_links.txt": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "onpolicy.egg-info/PKG-INFO": "68a4f24dfe24a041e585d32ac897fb265bb38252fba0fdae23a37d529d9e8c54",
+      "onpolicy.egg-info/SOURCES.txt": "7c9292e0cd9f6d74f1dc48b475d13c5405ae55f16c79c8e59c3d3bf4b186e165",
+      "onpolicy.egg-info/top_level.txt": "8f9fdb7116d9ba15e2d08397b4c2e72ba0bac44e0df59402b750ddb26280d2cf",
+      "README.md": "899027ec5a30177315ee8a1f239bdcdef6d8036a8d1d5d46d9ffc9f50a7558c4",
+      "requirements.txt": "de83ff894afdb15514e8e3b6f60203813da52a13c72b98bb800b5f544fff1e56",
+      "setup.py": "6a8952dc3c0bec2ff2028e2f675265ca5ca7f855cfc8cc5090e3da224bbd1ddd"
+    },
+    "historical_snapshot": "<historical-literature-root>\\mappo-valuenorm-reproduction-20261011\\source"
+  },
+  "environment": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "executable": ".venv\\Scripts\\python.exe",
+    "numpy": "1.23.5",
+    "torch": "2.11.0+cu128",
+    "cuda_runtime": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5050 Laptop GPU",
+    "source_sha256": "76617041a985bc386004370a4fda405d4035b0cce3ab8aee0f120ca6a75bb7bd"
+  },
+  "controlled_difference": {
+    "use_valuenorm": {
+      "on": true,
+      "off": false
+    }
+  },
+  "historical_audit": {
+    "status": "passed",
+    "source_sha256": "76617041a985bc386004370a4fda405d4035b0cce3ab8aee0f120ca6a75bb7bd",
+    "completed_smoke_jobs": 2,
+    "completed_formal_jobs": 6,
+    "total_training_environment_steps_including_smoke": 620000,
+    "independent_evaluation_models": 6,
+    "independent_evaluation_episodes_per_model": 100,
+    "finite_model_weights_verified": true,
+    "finite_logged_metrics_verified": true,
+    "csv_statistics_verified": true,
+    "png_integrity_verified": true,
+    "model_checkpoint_sha256": {
+      "valuenorm_on_smoke_10000_seed1_20261011/actor": "5b326e9eda1e6bdef203374f9f3291ff6cb36a22e69dcf4a8a575146530e2fcd",
+      "valuenorm_on_smoke_10000_seed1_20261011/critic": "3e6d1d949161d932056e62a2c90f415692090ef185d95f0b96c7972e431ace85",
+      "valuenorm_off_smoke_10000_seed1_20261011/actor": "4c0f060c93809a97540850518a3b8fceb15702400386ec40181d17cef7aa27d6",
+      "valuenorm_off_smoke_10000_seed1_20261011/critic": "e7126f40770193f7697ef8818707815217df19d340793f05c5e595b1c65736ec",
+      "valuenorm_on_formal_100000_seed1_20261011/actor": "6b27ab71595cc5368fd1c0745c27bff3bdce136134ba008d7526a6bf5d2f60c2",
+      "valuenorm_on_formal_100000_seed1_20261011/critic": "d27f6893be60896d1e553db5671530c81ab633a8aeee3766fb3ea81efe245ce2",
+      "valuenorm_on_formal_100000_seed2_20261011/actor": "44698249ca82ede5116feac929a81f64dd6008a2a6ba1a85309fdebcdf255037",
+      "valuenorm_on_formal_100000_seed2_20261011/critic": "2386e33fc24c667722d1b9f57e33b8ce5c2e1ac5ab90c966cb2bd34d44628c06",
+      "valuenorm_on_formal_100000_seed3_20261011/actor": "e59fd93dd3013f8f415a4ad5253aeda78fd34108fa6d19f083b9ef1a72512dc3",
+      "valuenorm_on_formal_100000_seed3_20261011/critic": "903afac858e62802995553da0016af43e5cb2b773bffd7c038aceac326c209b7",
+      "valuenorm_off_formal_100000_seed1_20261011/actor": "e401ccebda9fe8d3f21e4a6eba034554bf6114311aa829a1d03ac2f760c4f965",
+      "valuenorm_off_formal_100000_seed1_20261011/critic": "e078a4613051c22f31c4a9ba366931aab4d7c36add2e315e4c7a58cd1c8f2d98",
+      "valuenorm_off_formal_100000_seed2_20261011/actor": "e2b437898b4d8ea0a1754efce6cb337837982ab103c6a118d32a6e63d7292876",
+      "valuenorm_off_formal_100000_seed2_20261011/critic": "6d1ce16c2e88790996f81f78a7d9b8640aca19a49fd61c8824f3d84a8cb67d0c",
+      "valuenorm_off_formal_100000_seed3_20261011/actor": "4775985ed7c24a7662455d17160722b57d66524b69d9af31813d80baf1bda01d",
+      "valuenorm_off_formal_100000_seed3_20261011/critic": "51d5a3dea8ad7848395b8d5be9b9b58dbc4726ec0537cd99c75e417487bf904a"
+    }
+  },
+  "run_mapping": [
+    {
+      "historical_name": "valuenorm_off_formal_100000_seed1_20261011",
+      "group": "off",
+      "phase": "formal",
+      "seed": 1,
+      "current_relative_run_dir": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed1\\run1"
+    },
+    {
+      "historical_name": "valuenorm_off_formal_100000_seed2_20261011",
+      "group": "off",
+      "phase": "formal",
+      "seed": 2,
+      "current_relative_run_dir": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed2\\run1"
+    },
+    {
+      "historical_name": "valuenorm_off_formal_100000_seed3_20261011",
+      "group": "off",
+      "phase": "formal",
+      "seed": 3,
+      "current_relative_run_dir": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed3\\run1"
+    },
+    {
+      "historical_name": "valuenorm_off_smoke_10000_seed1_20261011",
+      "group": "off",
+      "phase": "smoke",
+      "seed": 1,
+      "current_relative_run_dir": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_10k_novaluenorm_seed1\\run1"
+    },
+    {
+      "historical_name": "valuenorm_on_formal_100000_seed1_20261011",
+      "group": "on",
+      "phase": "formal",
+      "seed": 1,
+      "current_relative_run_dir": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed1\\run2"
+    },
+    {
+      "historical_name": "valuenorm_on_formal_100000_seed2_20261011",
+      "group": "on",
+      "phase": "formal",
+      "seed": 2,
+      "current_relative_run_dir": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed2\\run2"
+    },
+    {
+      "historical_name": "valuenorm_on_formal_100000_seed3_20261011",
+      "group": "on",
+      "phase": "formal",
+      "seed": 3,
+      "current_relative_run_dir": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed3\\run2"
+    },
+    {
+      "historical_name": "valuenorm_on_smoke_10000_seed1_20261011",
+      "group": "on",
+      "phase": "smoke",
+      "seed": 1,
+      "current_relative_run_dir": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_10k_seed1\\run2"
+    }
+  ],
+  "preserved_artifacts_sha256": [
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed1\\run1\\logs\\events.out.tfevents.1791695185.zwj",
+      "sha256": "7f3f36e136f2801ac9b65f80613f05718911900a939fa4b529b8eac6abdfd085"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed1\\run1\\logs\\summary.json",
+      "sha256": "349d2e364e8591b1a617513eb68e2d69c6bbef65495858abaadf695a06cb8565"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed1\\run1\\logs\\actor_grad_norm\\actor_grad_norm\\events.out.tfevents.1791695188.zwj",
+      "sha256": "509c016cbbbb8f146cf949d8314cddb841c0dc5363aeb6e27b08e84b54f4d2e8"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed1\\run1\\logs\\agent0\\individual_rewards\\agent0\\individual_rewards\\events.out.tfevents.1791695188.zwj",
+      "sha256": "85cf3a25e1513cd7bcfff32c6b3de89fc7f8c5cc3c1cec890534fd33adbe195f"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed1\\run1\\logs\\agent1\\individual_rewards\\agent1\\individual_rewards\\events.out.tfevents.1791695188.zwj",
+      "sha256": "ae64606c4edeaca37ccdb6e3d26b1583fb84fd4cb5eed5bf1f2eefda0e9f5022"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed1\\run1\\logs\\agent2\\individual_rewards\\agent2\\individual_rewards\\events.out.tfevents.1791695188.zwj",
+      "sha256": "5715c3646283a2d64992d68bee5bac2939f1c5c72ae6d0567d2bb610a95660f4"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed1\\run1\\logs\\average_episode_rewards\\average_episode_rewards\\events.out.tfevents.1791695188.zwj",
+      "sha256": "1983de8a257cc39537076031b8227032e09d1dccccf116c3d2205527f29371e5"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed1\\run1\\logs\\critic_grad_norm\\critic_grad_norm\\events.out.tfevents.1791695188.zwj",
+      "sha256": "68d35337f67705f7513aacee4e8cb3f3137c07b62b292b8dc9a6ad28b9b19709"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed1\\run1\\logs\\dist_entropy\\dist_entropy\\events.out.tfevents.1791695188.zwj",
+      "sha256": "8468ec87b34fa62d184852869b858ec5d167e770473603dfbf61b2ffe229d248"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed1\\run1\\logs\\policy_loss\\policy_loss\\events.out.tfevents.1791695188.zwj",
+      "sha256": "6537d373470a39a400ac5dd8c80b1cbd60f22420c0e80e0d97e2be630c028e1e"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed1\\run1\\logs\\ratio\\ratio\\events.out.tfevents.1791695188.zwj",
+      "sha256": "b5dbf695bd65486ab45031ae9be50f8bc163ac986c96654abf5fde4a7ded8160"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed1\\run1\\logs\\value_loss\\value_loss\\events.out.tfevents.1791695188.zwj",
+      "sha256": "c0462188accedd6a35a07af0229a4bda7ef677ecf68a4d9527b2d7d01bccb461"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed1\\run1\\models\\actor.pt",
+      "sha256": "e401ccebda9fe8d3f21e4a6eba034554bf6114311aa829a1d03ac2f760c4f965"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed1\\run1\\models\\critic.pt",
+      "sha256": "e078a4613051c22f31c4a9ba366931aab4d7c36add2e315e4c7a58cd1c8f2d98"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed1\\run1\\console.log",
+      "sha256": "dbb7bf58dc6e4732de8291b7fa1fac408e62c004160d1f701befb40ffbf45ad8"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed1\\run1\\reproduction_record.json",
+      "sha256": "54cade8ff400f54d362f7a6eac1d34b2273df2472e9a161cd940519b17c8b938"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed2\\run1\\logs\\events.out.tfevents.1791695411.zwj",
+      "sha256": "1785183f57e912049e679e65bbe14f817d67ef7c45c69edf2abc3ab09f23f863"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed2\\run1\\logs\\summary.json",
+      "sha256": "8263da5327cd2d916b4d85bc48fdb923fef1c64e398607e7c70d54a7bc953491"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed2\\run1\\logs\\actor_grad_norm\\actor_grad_norm\\events.out.tfevents.1791695415.zwj",
+      "sha256": "abead01e6da4f148316e270f2ca6508f3749b00a7992c18a681ad74d66c95a20"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed2\\run1\\logs\\agent0\\individual_rewards\\agent0\\individual_rewards\\events.out.tfevents.1791695415.zwj",
+      "sha256": "574ca80d4943466de2c4acfe572fc10b3cd1ca6e9fc19a554b7ae4c92c564d97"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed2\\run1\\logs\\agent1\\individual_rewards\\agent1\\individual_rewards\\events.out.tfevents.1791695415.zwj",
+      "sha256": "ebc16c9af5a523b216dbc733d6daf71bae053fd9171d0ec1c522e3191c5cd09d"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed2\\run1\\logs\\agent2\\individual_rewards\\agent2\\individual_rewards\\events.out.tfevents.1791695415.zwj",
+      "sha256": "8ffc181cb6f89a85d4c19a389e2aa2503a4eeffc029b9e61178309d698530060"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed2\\run1\\logs\\average_episode_rewards\\average_episode_rewards\\events.out.tfevents.1791695415.zwj",
+      "sha256": "fc1dd281e1b808b49677dc9460c0db09ab1bf03f3d914812ee13b54af9cd5d98"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed2\\run1\\logs\\critic_grad_norm\\critic_grad_norm\\events.out.tfevents.1791695415.zwj",
+      "sha256": "8e4ffa031d56cb0765b5b5ead713e8ed33927aa866b74cf4da425203addc5a9d"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed2\\run1\\logs\\dist_entropy\\dist_entropy\\events.out.tfevents.1791695415.zwj",
+      "sha256": "25e2016aa6d6977c2aa4ad0e21a567f0c614c85307f244aebbe38f138a8fbce4"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed2\\run1\\logs\\policy_loss\\policy_loss\\events.out.tfevents.1791695415.zwj",
+      "sha256": "73cd5d750118332cf8dc8f4ad71df225c4c8b06b18736a72b544fbd5d6bff8af"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed2\\run1\\logs\\ratio\\ratio\\events.out.tfevents.1791695415.zwj",
+      "sha256": "e13527ea8f7611a31d72fa48164a29820b68afc07125bafec6a4ec9585edc32b"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed2\\run1\\logs\\value_loss\\value_loss\\events.out.tfevents.1791695415.zwj",
+      "sha256": "19d0f319677c7f79c3c1c9e1dd6b410604628eab73cf2e4bee2d7d3464e71f3a"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed2\\run1\\models\\actor.pt",
+      "sha256": "e2b437898b4d8ea0a1754efce6cb337837982ab103c6a118d32a6e63d7292876"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed2\\run1\\models\\critic.pt",
+      "sha256": "6d1ce16c2e88790996f81f78a7d9b8640aca19a49fd61c8824f3d84a8cb67d0c"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed2\\run1\\console.log",
+      "sha256": "8e93a4931534c3afc2ce64eed2e893a62dc91baf6531a2cddc5b4e11f946d632"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed2\\run1\\reproduction_record.json",
+      "sha256": "d76ef6445a6ccc8b6f6b7b2ffd32273d4fcab45a6eef382f99e2256337365519"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed3\\run1\\logs\\events.out.tfevents.1791695664.zwj",
+      "sha256": "5245be859a9a85f8f3459aba633616173a48fb622ce0f422f1973344efc5c76d"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed3\\run1\\logs\\summary.json",
+      "sha256": "d7f538f061d562b7fa8c3090f80649ece48cbfdd3fddc1c0de1b33d6138ee5a6"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed3\\run1\\logs\\actor_grad_norm\\actor_grad_norm\\events.out.tfevents.1791695668.zwj",
+      "sha256": "3b891d592e6bac1ed2d8c0f7f0f632e3ff9067e2710ad3f7e9b3e8703fcd2500"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed3\\run1\\logs\\agent0\\individual_rewards\\agent0\\individual_rewards\\events.out.tfevents.1791695668.zwj",
+      "sha256": "1f27b4fa2a45e180a204514eb21e0e80f0b7a9f24ca371ccf7d0fce63b931143"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed3\\run1\\logs\\agent1\\individual_rewards\\agent1\\individual_rewards\\events.out.tfevents.1791695668.zwj",
+      "sha256": "bf5955e97402c03b12f89bef070d3713dae0d5ff2cde662bc9c8c66c62358bed"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed3\\run1\\logs\\agent2\\individual_rewards\\agent2\\individual_rewards\\events.out.tfevents.1791695668.zwj",
+      "sha256": "defe999e859b12780129b7bad0efd4a9ed0f8414625fb5e2e962229127c9eb63"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed3\\run1\\logs\\average_episode_rewards\\average_episode_rewards\\events.out.tfevents.1791695668.zwj",
+      "sha256": "4db0d5a9f7d131f4ee8021902750f1ae26ec943a9019ebee6ed98735937a12a9"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed3\\run1\\logs\\critic_grad_norm\\critic_grad_norm\\events.out.tfevents.1791695668.zwj",
+      "sha256": "e71c1c18565bcf71c8ed85de0d16bbb228510fd8793cede538e64735edb62202"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed3\\run1\\logs\\dist_entropy\\dist_entropy\\events.out.tfevents.1791695668.zwj",
+      "sha256": "3b62fd45d6ffc3330d83fe2218edf61c3df119cc0719e5f8313c0f3983b69c82"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed3\\run1\\logs\\policy_loss\\policy_loss\\events.out.tfevents.1791695668.zwj",
+      "sha256": "dfe18437cbc4b8a9d50bc4ba63213315a9581a5bf7b492b3bb2ad67d886a0d49"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed3\\run1\\logs\\ratio\\ratio\\events.out.tfevents.1791695668.zwj",
+      "sha256": "a721329b98659434f8454bcad1157f934de7ab967c323059afb472151ce9aeb0"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed3\\run1\\logs\\value_loss\\value_loss\\events.out.tfevents.1791695668.zwj",
+      "sha256": "02703b74a8284f9395e793af7e803526ef728b52d4320229c9d1c9cc7e5ff926"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed3\\run1\\models\\actor.pt",
+      "sha256": "4775985ed7c24a7662455d17160722b57d66524b69d9af31813d80baf1bda01d"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed3\\run1\\models\\critic.pt",
+      "sha256": "51d5a3dea8ad7848395b8d5be9b9b58dbc4726ec0537cd99c75e417487bf904a"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed3\\run1\\console.log",
+      "sha256": "5d61c9e56ba483a5b2bd1847de3ee21aa37507ce182a2f7251b308c2dfb0626c"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_novaluenorm_seed3\\run1\\reproduction_record.json",
+      "sha256": "eb5facac0c7a16c890199d30ffed6d34d86c51d43c5c48ef81616ed6b19825b6"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_10k_novaluenorm_seed1\\run1\\logs\\events.out.tfevents.1791695043.zwj",
+      "sha256": "cfec51474464e847be56dce3c335ab6b096262544c298e9ce2415e73fea83fcf"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_10k_novaluenorm_seed1\\run1\\logs\\summary.json",
+      "sha256": "507aadf6b5724fd9f8ec825e82219c1d3a0773483ceee374aebd7db310b7fd92"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_10k_novaluenorm_seed1\\run1\\logs\\actor_grad_norm\\actor_grad_norm\\events.out.tfevents.1791695047.zwj",
+      "sha256": "2cc85e5d514f78b1720a53ea21c73f2359ebb3efe99104e9ff70d0a7e48daa9c"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_10k_novaluenorm_seed1\\run1\\logs\\agent0\\individual_rewards\\agent0\\individual_rewards\\events.out.tfevents.1791695047.zwj",
+      "sha256": "cb668042c1a1341e46b4e7930f16ed5a0c295b700bcaaa1ba7df14fecd19746c"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_10k_novaluenorm_seed1\\run1\\logs\\agent1\\individual_rewards\\agent1\\individual_rewards\\events.out.tfevents.1791695047.zwj",
+      "sha256": "d04e7f10135a193c522e8137b3d514d75833049121eddc9c36d0c7319c72fc66"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_10k_novaluenorm_seed1\\run1\\logs\\agent2\\individual_rewards\\agent2\\individual_rewards\\events.out.tfevents.1791695047.zwj",
+      "sha256": "4a3dd0eecfe30beb673e7edf589456a8bd4de81b9234415fc3b38292ba88eb67"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_10k_novaluenorm_seed1\\run1\\logs\\average_episode_rewards\\average_episode_rewards\\events.out.tfevents.1791695047.zwj",
+      "sha256": "ba1d4b631bf65db5eb4fe3f7023a45f4ad3ab528f3bebe515e0e3c804c738ca9"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_10k_novaluenorm_seed1\\run1\\logs\\critic_grad_norm\\critic_grad_norm\\events.out.tfevents.1791695047.zwj",
+      "sha256": "d7b65cbe75f00451bd6825d5c00408817eb0c25172b27e049403080b3a8c80c9"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_10k_novaluenorm_seed1\\run1\\logs\\dist_entropy\\dist_entropy\\events.out.tfevents.1791695047.zwj",
+      "sha256": "66bfb2e0b21aed3201bfff68766a4a20d7d8a1452970b58b7898718268e35080"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_10k_novaluenorm_seed1\\run1\\logs\\policy_loss\\policy_loss\\events.out.tfevents.1791695047.zwj",
+      "sha256": "a36e6c4b8961b65850f54eae015aabd5eeea6d7b3cb9175c766e3df83bc0b34e"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_10k_novaluenorm_seed1\\run1\\logs\\ratio\\ratio\\events.out.tfevents.1791695047.zwj",
+      "sha256": "e70c4c2d73ec424c65e016ffc726a77bce4f9fa084d8a6c62191ad019ba81bec"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_10k_novaluenorm_seed1\\run1\\logs\\value_loss\\value_loss\\events.out.tfevents.1791695047.zwj",
+      "sha256": "f98e57e273a11fe64e4779c789b5fab06068a3eb0468abbb54398bf7572bf81e"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_10k_novaluenorm_seed1\\run1\\models\\actor.pt",
+      "sha256": "4c0f060c93809a97540850518a3b8fceb15702400386ec40181d17cef7aa27d6"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_10k_novaluenorm_seed1\\run1\\models\\critic.pt",
+      "sha256": "e7126f40770193f7697ef8818707815217df19d340793f05c5e595b1c65736ec"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_10k_novaluenorm_seed1\\run1\\console.log",
+      "sha256": "6f257bac06d74be5a3d062699955b08c78a44d8f75e8478220e0c2a08098b25e"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_10k_novaluenorm_seed1\\run1\\reproduction_record.json",
+      "sha256": "36c1dbde8ec0a99fc8f55bdc40216ae8e55c99857e286553ab46d63fa2e7d405"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed1\\run2\\logs\\events.out.tfevents.1791695068.zwj",
+      "sha256": "93b7c9f9da4b17139037360878b4f30749379362b16284b2ab3e9133fa54eb9c"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed1\\run2\\logs\\summary.json",
+      "sha256": "c05bb48ef5638117a9f161300527d8c2c064c6a877e39c45e7c2b811adc730c7"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed1\\run2\\logs\\actor_grad_norm\\actor_grad_norm\\events.out.tfevents.1791695071.zwj",
+      "sha256": "3a8c4fb9fcf093a20ced44dc99a2c80119e33f96c994cb19399637d35bce2b2e"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed1\\run2\\logs\\agent0\\individual_rewards\\agent0\\individual_rewards\\events.out.tfevents.1791695071.zwj",
+      "sha256": "423b141d1e3864ea955e21ed100ac897b4a10b3c63c81837c1b49e96400109ae"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed1\\run2\\logs\\agent1\\individual_rewards\\agent1\\individual_rewards\\events.out.tfevents.1791695071.zwj",
+      "sha256": "25c87ca8e2ff583e8047d865940191969f1cd3a674891a00c0b9dbfea6d7d747"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed1\\run2\\logs\\agent2\\individual_rewards\\agent2\\individual_rewards\\events.out.tfevents.1791695071.zwj",
+      "sha256": "674ec925274c5d3f8cec143dbf4fe4f0b9dc01d44fc5f2b894419ac3c19f8b8b"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed1\\run2\\logs\\average_episode_rewards\\average_episode_rewards\\events.out.tfevents.1791695071.zwj",
+      "sha256": "a463052079bdffeba5860100fbd586cfb12cfd616c513125b15a4eb66dd81fff"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed1\\run2\\logs\\critic_grad_norm\\critic_grad_norm\\events.out.tfevents.1791695071.zwj",
+      "sha256": "c9f0cafd19e664fa60513fbb62b98aaa8f9b609c1114c0954577bb3f7d513698"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed1\\run2\\logs\\dist_entropy\\dist_entropy\\events.out.tfevents.1791695071.zwj",
+      "sha256": "f2854a70e453bb2f3f02c1d6ed87da42c8fa7195687cf7a78bb8f27daab84844"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed1\\run2\\logs\\policy_loss\\policy_loss\\events.out.tfevents.1791695071.zwj",
+      "sha256": "ea5f174db8fd678ce5d0e39943c8d8fedc3305e44b65fa8299820530a10b134f"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed1\\run2\\logs\\ratio\\ratio\\events.out.tfevents.1791695071.zwj",
+      "sha256": "4fe181b7a03e9db5f07346ff79b5cb049738a394f416e6cea1cbc825a81a078f"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed1\\run2\\logs\\value_loss\\value_loss\\events.out.tfevents.1791695071.zwj",
+      "sha256": "2270f47d7a776a422c02b39085db1e95f23ac7ce7306db580b26902bbfe17bb0"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed1\\run2\\models\\actor.pt",
+      "sha256": "6b27ab71595cc5368fd1c0745c27bff3bdce136134ba008d7526a6bf5d2f60c2"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed1\\run2\\models\\critic.pt",
+      "sha256": "d27f6893be60896d1e553db5671530c81ab633a8aeee3766fb3ea81efe245ce2"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed1\\run2\\console.log",
+      "sha256": "c318168365e933ee4e8c98c8b0fc79986846edf148414a91f07da0861f084ab3"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed1\\run2\\reproduction_record.json",
+      "sha256": "f9caafc493abbf4e3307ca3bebf0b2172acb6697d0aaa523b02531827beb12f2"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed2\\run2\\logs\\events.out.tfevents.1791695295.zwj",
+      "sha256": "16453b7d1946d4857193e3d9755c08827a3737afa1cda2230bdccf1242b0fbdd"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed2\\run2\\logs\\summary.json",
+      "sha256": "aa891350e892063d6af1b9c9b66c351ecf3b7f3a9df31020cd57f6dbcbd42201"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed2\\run2\\logs\\actor_grad_norm\\actor_grad_norm\\events.out.tfevents.1791695298.zwj",
+      "sha256": "ba64616b76f188af06997ab04e49ad13500075996820731910afb6ec83725107"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed2\\run2\\logs\\agent0\\individual_rewards\\agent0\\individual_rewards\\events.out.tfevents.1791695298.zwj",
+      "sha256": "d819a9788245ff1e347617fe2ca3540acd4ac6cd2c2bd3069a54a5a63d4abfac"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed2\\run2\\logs\\agent1\\individual_rewards\\agent1\\individual_rewards\\events.out.tfevents.1791695298.zwj",
+      "sha256": "a1b2ad337d9b703295df66981e412d8329a43da423ec289b8f99d2641862544a"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed2\\run2\\logs\\agent2\\individual_rewards\\agent2\\individual_rewards\\events.out.tfevents.1791695298.zwj",
+      "sha256": "8bed98bcc05f2aba86a144f8a6c07f53f9a2ab5b137801a441c60b1d28570529"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed2\\run2\\logs\\average_episode_rewards\\average_episode_rewards\\events.out.tfevents.1791695298.zwj",
+      "sha256": "daa74afd93d6eb3bd416859180e55175341136b4c8a934813b984baee7e0cf29"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed2\\run2\\logs\\critic_grad_norm\\critic_grad_norm\\events.out.tfevents.1791695298.zwj",
+      "sha256": "dd3bcdb1c7a1033f15b917c610e22c44a16f7212d02be379e9538618b2837ee3"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed2\\run2\\logs\\dist_entropy\\dist_entropy\\events.out.tfevents.1791695298.zwj",
+      "sha256": "7713e90983aee5fccebcca6b250101f59b28f027623a1e47666426bed75a2755"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed2\\run2\\logs\\policy_loss\\policy_loss\\events.out.tfevents.1791695298.zwj",
+      "sha256": "876d2135feacd52de1c696c449ef3e68abcab42a72bb4a106a1e97a47e8ff94f"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed2\\run2\\logs\\ratio\\ratio\\events.out.tfevents.1791695298.zwj",
+      "sha256": "577e7a6d7ec622b6329ace99b1272eeb55df9fdc882c050abc15c7c60e5ac54a"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed2\\run2\\logs\\value_loss\\value_loss\\events.out.tfevents.1791695298.zwj",
+      "sha256": "b50cf948d674b67ed66aad6325118f6b427350cc7f1a89e3e4c94198311d698b"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed2\\run2\\models\\actor.pt",
+      "sha256": "44698249ca82ede5116feac929a81f64dd6008a2a6ba1a85309fdebcdf255037"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed2\\run2\\models\\critic.pt",
+      "sha256": "2386e33fc24c667722d1b9f57e33b8ce5c2e1ac5ab90c966cb2bd34d44628c06"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed2\\run2\\console.log",
+      "sha256": "7d539705304787bccfe6fa6ed74f24874bae404e447195a2e2bdc6262e28cb41"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed2\\run2\\reproduction_record.json",
+      "sha256": "adf38f600f005407c965ddf18ce32c0dc6b9c34a4c37fe5c3390300a98215ee8"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed3\\run2\\logs\\events.out.tfevents.1791695518.zwj",
+      "sha256": "89b18ba0e7bedec950f1e8d002a30ca062e9c0fac6c036cf0afcd9f158827dac"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed3\\run2\\logs\\summary.json",
+      "sha256": "985024f01b835097eaf381a78ef0126054fccdea339dff4f9596296e8a7fdd3b"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed3\\run2\\logs\\actor_grad_norm\\actor_grad_norm\\events.out.tfevents.1791695521.zwj",
+      "sha256": "bb499275105fa29040af1db1ee2c7ad07870605c183026b50044e12e592e44a4"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed3\\run2\\logs\\agent0\\individual_rewards\\agent0\\individual_rewards\\events.out.tfevents.1791695521.zwj",
+      "sha256": "922ead8a6f170ec0289283ab629b545668f356955b9f13f7d23468419e211b26"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed3\\run2\\logs\\agent1\\individual_rewards\\agent1\\individual_rewards\\events.out.tfevents.1791695521.zwj",
+      "sha256": "d0921f88fa710c1bb0717139fdac7a4cfe7a676da7c834862bb01883ac23e63b"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed3\\run2\\logs\\agent2\\individual_rewards\\agent2\\individual_rewards\\events.out.tfevents.1791695521.zwj",
+      "sha256": "c062d17daa7fa24bc00dcbaf260ec59675db122c160f09d8725ab65843e746fb"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed3\\run2\\logs\\average_episode_rewards\\average_episode_rewards\\events.out.tfevents.1791695521.zwj",
+      "sha256": "995accc5b979598d62c41da590efbfe32904e14dd8056b824ba7d9274a8caffe"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed3\\run2\\logs\\critic_grad_norm\\critic_grad_norm\\events.out.tfevents.1791695521.zwj",
+      "sha256": "4910806f5ba3dffde6ced0fcaebda9164b65777db13ece7c59fb60bad2acc91d"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed3\\run2\\logs\\dist_entropy\\dist_entropy\\events.out.tfevents.1791695521.zwj",
+      "sha256": "20cb14c29ec8c3a4e40c5629ba760fba270573f2fec79cf8c8976e3c4d195d31"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed3\\run2\\logs\\policy_loss\\policy_loss\\events.out.tfevents.1791695521.zwj",
+      "sha256": "eb25d9cfcc7182189aef411e584fb503c1ff0e274421b0049f32c3600d41db4b"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed3\\run2\\logs\\ratio\\ratio\\events.out.tfevents.1791695521.zwj",
+      "sha256": "920934aad5d86880acf7c02ef96f0ada1fe3385457e1f694a6d885e6f0b0dc32"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed3\\run2\\logs\\value_loss\\value_loss\\events.out.tfevents.1791695521.zwj",
+      "sha256": "461c1afe70cf081f95ac2eb723b72fd1d017613bc14ffca2dcdb695ca71d54ae"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed3\\run2\\models\\actor.pt",
+      "sha256": "e59fd93dd3013f8f415a4ad5253aeda78fd34108fa6d19f083b9ef1a72512dc3"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed3\\run2\\models\\critic.pt",
+      "sha256": "903afac858e62802995553da0016af43e5cb2b773bffd7c038aceac326c209b7"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed3\\run2\\console.log",
+      "sha256": "5f7ec61608ad0eb9fcfd04ac7f9b283309ba23c5c2b1b51df7226348a70906dd"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_100k_seed3\\run2\\reproduction_record.json",
+      "sha256": "962d902c6df5570194277d8f6bceeb625315c69b9642b4c7cc88eafad9b57417"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_10k_seed1\\run2\\logs\\events.out.tfevents.1791695014.zwj",
+      "sha256": "7e956b3d1e312305c41db48051a945dd5584911eea5956c0e7d40399eec48007"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_10k_seed1\\run2\\logs\\summary.json",
+      "sha256": "c01d03c348f3403f4a5314b66272fe738574f18265610c7d5153be29475fd367"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_10k_seed1\\run2\\logs\\actor_grad_norm\\actor_grad_norm\\events.out.tfevents.1791695019.zwj",
+      "sha256": "5a4b49aa81e2900d884f79afe59123c7299457a81d4b3b42f1719a2c31dae4b9"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_10k_seed1\\run2\\logs\\agent0\\individual_rewards\\agent0\\individual_rewards\\events.out.tfevents.1791695020.zwj",
+      "sha256": "8976e9a992cc56b67c70437fd1652ddcf79e248bcbc176989e6b6848e0259d07"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_10k_seed1\\run2\\logs\\agent1\\individual_rewards\\agent1\\individual_rewards\\events.out.tfevents.1791695020.zwj",
+      "sha256": "9666bc5b7dd4375d16d46f925ba6bf140280549ceccdc29b2f34ddaaca4facc1"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_10k_seed1\\run2\\logs\\agent2\\individual_rewards\\agent2\\individual_rewards\\events.out.tfevents.1791695020.zwj",
+      "sha256": "2b8ea7e78edc9aa2b7896539b5c7a36295cbdb1c21626d75e2f6fb1b554a270b"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_10k_seed1\\run2\\logs\\average_episode_rewards\\average_episode_rewards\\events.out.tfevents.1791695020.zwj",
+      "sha256": "a6bee42c785df0d96645bbe502e8bb9fc452852f75740cf4e44f1aacc6512b95"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_10k_seed1\\run2\\logs\\critic_grad_norm\\critic_grad_norm\\events.out.tfevents.1791695020.zwj",
+      "sha256": "da6f0af04c9d05155aba5caa69c2ab21b36c2e0402febedddadc9da5ee6e861c"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_10k_seed1\\run2\\logs\\dist_entropy\\dist_entropy\\events.out.tfevents.1791695019.zwj",
+      "sha256": "9cb6c967fc8a13af5681a772174cf72a52b9378654ad1ccbb85ae5b36a220d3b"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_10k_seed1\\run2\\logs\\policy_loss\\policy_loss\\events.out.tfevents.1791695019.zwj",
+      "sha256": "1c1c2a8772f49765558ad58c5104a5b1d470a5d52728e4e6e6c191bc8d2ceb2a"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_10k_seed1\\run2\\logs\\ratio\\ratio\\events.out.tfevents.1791695020.zwj",
+      "sha256": "64cd03b5946b9eccc93692ce47799e845b4e55bf0c64fa71ae65e0bed2961b59"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_10k_seed1\\run2\\logs\\value_loss\\value_loss\\events.out.tfevents.1791695019.zwj",
+      "sha256": "e58abdf6713ba3e3c3e4312b4bd5fe2c8be4e861f29bd29a01a5b1632850a209"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_10k_seed1\\run2\\models\\actor.pt",
+      "sha256": "5b326e9eda1e6bdef203374f9f3291ff6cb36a22e69dcf4a8a575146530e2fcd"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_10k_seed1\\run2\\models\\critic.pt",
+      "sha256": "3e6d1d949161d932056e62a2c90f415692090ef185d95f0b96c7972e431ace85"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_10k_seed1\\run2\\console.log",
+      "sha256": "b3c64f2fdd98c1a29d66202d845dafa46e7753cefaf4c36b85cdcae8e6497283"
+    },
+    {
+      "path": "official-source\\on-policy-main\\onpolicy\\scripts\\results\\MPE\\simple_spread\\rmappo\\mpe_spread_rmappo_parallel8_10k_seed1\\run2\\reproduction_record.json",
+      "sha256": "ed4c656dc0feb95fbe0814729ffb54f3973f93fde44160571a36b447c4a94eea"
+    },
+    {
+      "path": "figures\\valuenorm_smoke_evaluation_episodes.csv",
+      "sha256": "f857b476b1e39dc7476d3354ba0c5a951aba1c7292a12336f5931af87a32ea9c"
+    },
+    {
+      "path": "figures\\valuenorm_smoke_evaluation_summary.json",
+      "sha256": "fd8c0b58a7691891507ad94f59f5a6b4ef8d1727e7d2576d2291c596a4710748"
+    },
+    {
+      "path": "figures\\valuenorm_evaluation_episodes.csv",
+      "sha256": "74103caa2a12bd1f41787ace79df7230a03ee3184d9b9c6f73d1014cd6550a19"
+    },
+    {
+      "path": "figures\\valuenorm_evaluation_summary.json",
+      "sha256": "6a7c1a9a0f0956e8bb875a99d49de3570f68b6886530eaea2daac34abbd6373b"
+    }
+  ],
+  "preserved_user_files_sha256": {
+    "scripts\\run_localcritic_parallel8_100k_seed1.ps1": "AE14B68C52F0644B45C9C0103ACB71AF082500E9BABA53979D5CAED3A2A95BD7",
+    "figures\\rmappo_parallel8_100k_3seeds.png": "5008FB84AF5370019979C6C82EF87B294BC8EB648317CC11F2D28E4575565560",
+    "scripts\\run_localcritic_parallel8_100k_seed3.ps1": "5734E1B78F272C5BCE7DA55273ABC344288AA10868E1676845A8DAF6BA110C75",
+    "analysis\\plot_critic_comparison.py": "2B7943BA952044D8B198F9FBD6E6A6FEEA8DABF396278E3FCDAE1FF9F5B0D7CF",
+    "figures\\localcritic_parallel8_100k_3seeds.png": "B0036C5CC7D5D226D0B10849714195B46947900B7F41A3A3911F62012E416257",
+    "scripts\\img_1.png": "1E976AABAE9BEFE43F4D1ABFB691E6ED025248B3F5E9EEA5C174D847EF143C49",
+    "scripts\\run_mpe_parallel8_100k.ps1": "60416E7B2A25E234E8AA7453E9AD52B6A1DC581D7CBB51F83F01BDCCCBAD220F",
+    "figures\\localcritic_parallel8_100k_3seeds.csv": "A1341BEF5092610CAD09BF420EAF4945E2D822E4A68F08A6CF97B2C659030C56",
+    "scripts\\run_mpe_10k.ps1": "A40E987CF1FEB84C0B87031774800A2278B178F541AB92A8329D7B0B54D9557B",
+    "scripts\\img.png": "1E976AABAE9BEFE43F4D1ABFB691E6ED025248B3F5E9EEA5C174D847EF143C49",
+    "analysis\\plot_localcritic_3seeds.py": "C3E5C92DE648835928A7300E15426129D79AF6D00CA081E442C7918B8922047D",
+    "scripts\\run_mpe_parallel8_10k.ps1": "E1F14CABDBB3B544E799EA6AC85B58B138154BCCD8F23D4700609B153C0CAAA4",
+    "scripts\\run_localcritic_parallel8_100k_seed2.ps1": "45B4ADF860B5C6B9F70D3F0F8B0128572374F4CB58A5CB6483A00FA891D40521",
+    "figures\\rmappo_parallel8_100k_3seeds.csv": "BEFB562EC0A26220E94EE76B53E2CFF55FD2B926E232834EB907F0EC3F66245B",
+    "figures\\centralized_vs_localcritic_3seeds.png": "1482C642C249D7D1E9414C904C45FA4756CBB3CE573F01BFBDD0A50209ABA999",
+    "scripts\\run_mpe_parallel8_100k_seed2.ps1": "4CA0C91D3C053FAF5B2767A73FBE984C6E8D7AF1A0BF470F2A7E0629CF4AFDF0",
+    "analysis\\plot_rmappo_3seeds.py": "4DFACE686106091F81DE6F59B96CB05590DBA2FAFDDB5087A670B2A44CE2ECCA",
+    "scripts\\run_mpe_parallel8_100k_seed3.ps1": "A5B67150B01B9DBAB5D1D3CE9E74C3AF6B0F91CB5191EB5BBF34595D300F8BDE"
+  },
+  "current_source": "official-source\\on-policy-main",
+  "relocation_checks": {
+    "seed_script_syntax": "passed",
+    "resolved_configs_match_all_six_completed_runs": true,
+    "only_training_difference": "use_valuenorm (experiment names also differ)",
+    "migrated_artifacts_checksum_verified": 132,
+    "unrelated_user_files_unchanged": 18,
+    "finite_checkpoint_files": 16,
+    "regenerated_training_outputs_identical": true,
+    "repeated_evaluation_episodes_per_model": 3,
+    "repeated_evaluation_models": 6,
+    "analysis_unit_tests_passed": 5,
+    "training_during_reorganization": false
+  },
+  "cleanup": {
+    "disposition": "Windows Recycle Bin",
+    "removed_paths": [
+      "scripts\\run_valuenorm_experiment.ps1",
+      "experiments\\valuenorm-20261011",
+      "<historical-literature-root>\\mappo-valuenorm-reproduction-20261011",
+      "<historical-literature-root>\\tmp\\valuenorm-project-integration"
+    ],
+    "completed_utc": "2026-10-11T06:52:22.0468946Z"
+  },
+  "publication_note": "Absolute machine-specific path prefixes replaced in this public copy; unmodified local metadata and all raw runs remain under ignored official-source/."
+}

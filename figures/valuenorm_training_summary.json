@@ -1,0 +1,73 @@
+{
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "budget_per_run": 100000,
+  "last_logged_step": 99200,
+  "logged_points": 100,
+  "metric": "Training proxy: mean(buffer.rewards) * episode_length; not independent evaluation",
+  "std_ddof": 0,
+  "last_window": "last 10 common logged points, 90200..99200",
+  "source_sha256": "76617041a985bc386004370a4fda405d4035b0cce3ab8aee0f120ca6a75bb7bd",
+  "groups": {
+    "on": {
+      "last_point_mean": -175.912872950236,
+      "last_point_std": 3.955699863807223,
+      "last_10_mean": -179.84525998433432,
+      "last_10_std_across_seed_means": 1.8622442161958186,
+      "per_seed_last_point": [
+        -171.9530463218689,
+        -181.31494522094727,
+        -174.47062730789185
+      ],
+      "per_seed_last_10_mean": [
+        -177.45057702064514,
+        -181.99183821678162,
+        -180.09336471557617
+      ],
+      "elapsed_seconds": [
+        117.29699999978766,
+        116.51599999982864,
+        144.59400000004098
+      ]
+    },
+    "off": {
+      "last_point_mean": -183.10540914535522,
+      "last_point_std": 1.0305184959398628,
+      "last_10_mean": -182.87431677182516,
+      "last_10_std_across_seed_means": 2.339972932041432,
+      "per_seed_last_point": [
+        -181.9970965385437,
+        -182.84000158309937,
+        -184.4791293144226
+      ],
+      "per_seed_last_10_mean": [
+        -186.11911177635193,
+        -180.6891679763794,
+        -181.81467056274414
+      ],
+      "elapsed_seconds": [
+        109.73400000017136,
+        106.23400000017136,
+        109.31300000008196
+      ]
+    }
+  },
+  "smoke_vs_formal_seed1_prefix_max_abs_difference": {
+    "on": 0.0,
+    "off": 0.0
+  },
+  "on_off_initial_logged_reward_difference_per_seed": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "on_minus_off_last_10_paired_seed_differences": [
+    8.668534755706787,
+    -1.3026702404022217,
+    1.7213058471679688
+  ],
+  "on_minus_off_last_10_mean_difference": 3.0290567874908447
+}
